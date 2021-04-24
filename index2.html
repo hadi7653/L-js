@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>javascript version 2</title>
+</head>
+<body>
+    <h1 align="center" style="color:#0004ff"> welcome to javascript page 2</h1>
+<script type="text/javascript">
+	// clousre
+
+    function abc(){
+        this.x;
+        this.y;
+
+            this.set = function(a,b){
+            this.x=a;
+            this.y=b;
+
+        }
+        this.display=function(){
+         alert(this.x+this.y);
+        }
+    }
+var ob= new abc();
+// ob.set(10,50);
+// ob.display();
+
+let cb= new abc();
+// cb.set(60,50)
+// cb.display();
+    
+</script>
+</body>
+</html>
